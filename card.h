@@ -13,6 +13,6 @@ typedef struct  {
 
 void createDeck(Card deck[]);
 void shuffleDeck(Card deck[]);
-
+void cardsToText(Card c,char cardtext[]);
 
 #endif

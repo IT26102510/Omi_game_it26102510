@@ -26,19 +26,17 @@ void shuffleDeck(Card deck[]){
     Card temp = deck[i];            
     deck[i] = deck[j];
     deck[j] = temp;
-}
+    }
     for(int i = 0; i < DECK_SIZE; i++){
         printf("Card %d: Rank %d, Suit %c\n", i + 1, deck[i].rank, deck[i].suit);
     }
 
 }
 
-
 //Representing the cards in words
+void cardsToText(Card c,char cardtext[]){
+    const char *names[] = {"7", "8", "9", "10", "J", "Q", "K", "A"};
+    sprintf(cardtext, "%s of %c", names[c.rank - 7], c.suit);
 
-void cardsToText(){}
-
-
-
-
+}
 
