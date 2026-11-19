@@ -1,8 +1,10 @@
+#ifndef CARD_H
+#define CARD_H
+
 #define DECK_SIZE  32
 #define HANDS 8
 
 //how the structor of a card looks like
-
 typedef struct  {
     int rank; // cz easy to compare
     char suit;
@@ -10,3 +12,7 @@ typedef struct  {
 
 
 void createDeck(Card deck[]);
+void shuffleDeck(Card deck[]);
+
+
+#endif
