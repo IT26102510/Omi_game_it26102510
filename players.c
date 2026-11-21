@@ -6,10 +6,7 @@
 void createPlayers(Player players[], Card deck[DECK_SIZE]) {
     for (int i = 0; i < NUM_PLAYERS; i++) {
         for (int j = 0; j < 4; j++) {
-            players[i].hand[j] = deck[j]; // Initialize each card in the hand
-                // for(int k = 0; k < 4; k++){
-                //     printf("Card rank :%d and suit: %c\n", players[0].hand[k].rank, players[0].hand[k].suit);
-                // }
+            players[i].hand[j] = deck[i * 4 + j]; // Initialize each card in the hand
         }
         
         
