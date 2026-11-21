@@ -33,10 +33,10 @@ void shuffleDeck(Card deck[]){
 
 }
 
+
 //Representing the cards in words
 void cardsToText(Card c,char cardtext[]){
     const char *names[] = {"7", "8", "9", "10", "J", "Q", "K", "A"};
     sprintf(cardtext, "%s of %c", names[c.rank - 7], c.suit);
-
 }
 
