@@ -8,7 +8,7 @@ int main(void){
     int choice;
     while(1){
         printf("\n===== OMI =====\n1. Play\n2. Rules\n3. Exit\n");
-        if (scanf(" %d", &choice) != 1) {
+        if (scanf(" %d", &choice) != 1) { //check if the input is a valid integer
             while (getchar() != '\n');   // throw away the bad input
             printf("Please enter a number.\n");
             continue;

@@ -7,7 +7,6 @@ void createDeck(Card deck[]){
     char suits[] = {'H', 'D', 'C', 'S'}; // Hearts, Diamonds, Clubs, Spades
     
     int i = 0;
-    
     //populating the deck with cards (all the possible combinations of rank and suit)
     for(int s = 0 ; s < 4; s++){
         for(int r = 7 ; r <= 14; r++){
@@ -27,10 +26,6 @@ void shuffleDeck(Card deck[]){
     deck[i] = deck[j];
     deck[j] = temp;
     }
-    for(int i = 0; i < DECK_SIZE; i++){
-        printf("Card %d: Rank %d, Suit %c\n", i + 1, deck[i].rank, deck[i].suit);
-    }
-
 }
 
 

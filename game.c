@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "card.h"
+#include "game.h"
+#include "players.h"
 
 
 void showRules() {
@@ -10,10 +12,14 @@ void showRules() {
     printf("Good luck and have fun!\n");
 }
 
+
 void startGame() {
     Card deck[DECK_SIZE]; // Create an array of Card structs to hold the deck
+    Player players[NUM_PLAYERS]; // Create an array of Player structs to hold the players
     // char cardText[DECK_SIZE]; // Array to hold the text representation of each card
+    
     createDeck(deck);
     shuffleDeck(deck);
+    createPlayers(players, deck);
 
 }
